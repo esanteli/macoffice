@@ -704,7 +704,8 @@ footer {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-radius: 30px; }
   .container_image_modal img {
     height: 100%;
     object-fit: cover;
