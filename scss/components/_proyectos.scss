@@ -1,0 +1,162 @@
+/* Block Style */
+.block-style-twentySeven {
+    border: none;
+    border-radius: 20px;
+    padding: 55px 12px 40px;
+    text-align: center;
+    margin-top: 35px;
+    transition: all 0.3s ease-in-out;
+    height: 300px;
+    margin: 50px 0;
+    box-shadow: 0 15px 40px rgba(31, 39, 60, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to top, #a7b8d460, white); ;
+
+    &:hover {
+        border-color: $font-color-white;
+        background: $font-color-white;
+        box-shadow: 0 15px 40px rgba(21, 21, 21, 0.09);
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            display: block;
+            z-index: 10;
+        }
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.5px;
+        margin: 20px 0;
+        color: $background-dark;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+/* Video Box */
+.video-box-two {
+    .video-icon {
+        width: 170px;
+        height: 110px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: all 0.3s ease-in-out;
+        transform: translate(-50%, -50%);
+
+        &:hover {
+            background: #FFB840;
+        }
+
+        img {
+            margin-left: -9px;
+        }
+    }
+}
+
+.container-proyecto{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 20px;
+}
+
+.container-proyecto:hover {
+    transform: scale(1.02); /* Un pequeño aumento de escala en hover */
+}
+
+/* Degradado de overlay */
+.container-proyecto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Coincide con el borde del contenedor */
+    background: linear-gradient(45deg, rgba(9, 31, 79, 0), rgba(9, 31, 79, 0.27));
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease; /* Transición suave */
+    pointer-events: none; /* Asegura que no interfiera con el contenido */
+}
+
+.container-proyecto:hover::before {
+    opacity: 1; /* Aparece el degradado en hover */
+}
+
+.tag-proyecto {
+    background-color: #a7b8d4;
+    color: white;
+    height: 20px;
+    font-size: small;
+    font-weight: 600;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 5px 0px 5px 0px;
+    padding: 15px 20px 15px 20px;
+}
+
+.description-proyecto {
+    background-color: #14223a7f;
+    color: white;
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: left; /* Alineación del texto a la izquierda */
+    line-height: 1.5; /* Espaciado entre líneas */
+    max-height: 200px; /* Altura máxima del contenedor */
+    overflow-y: none;
+}
+
+
+.titulo-proyecto {
+    background-color: white;
+    color: $dark;
+    font-size:  small;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 5px 0px;
+    padding: 10px 15px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    line-height: 1.5; /* Espaciado entre líneas */
+    max-height: 150px; /* Altura máxima del contenedor */
+    overflow-y: auto;
+}

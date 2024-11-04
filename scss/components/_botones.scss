@@ -1,0 +1,45 @@
+.btn-vermas {
+    background-color: $primary-color;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    text-align: center;
+    color: $font-color-white;
+    font-size: 10px;
+    width: 100px;
+}
+
+.btn-cotiza {
+    font-family: $font-family-base;
+    background: linear-gradient(to left, $primary-color, $secondary-color);
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: end;
+    padding: 4px 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    margin: 20px 0;
+    color: $font-color-white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 15px 40px rgba(31, 39, 60, 0.1);
+    cursor: pointer;
+
+    div {
+        background-color: $background-dark;
+        border-radius: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        text-align: center;
+        color: $font-color-white;
+        font-size: 12px;
+        width: 150px;
+        cursor: pointer;
+    }
+}

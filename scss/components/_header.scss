@@ -1,0 +1,56 @@
+.btn-header {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(29, 9, 79, 0.097);
+    text-align: center;
+    padding: 10px 23px 10px 23px;
+    color: $dark;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 20px;
+    
+}
+
+.btn-header:hover {
+  box-shadow: 0px 4px 12px rgba(29, 9, 79, 0.2); /* Aumenta la sombra */
+  animation: pulse 0.6s ease infinite;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05); /* Incrementa un 5% en el tamaño */
+  }
+}
+
+.logo-header {
+    height: auto; /* Mantiene la proporción del logo */
+    margin: 20px 30px 20px 0px; /* Margen lateral para separarlo de otros elementos */
+}
+
+  img {
+    display: flex;
+    align-items: center;
+    width: 170px;
+
+  }
+
+/* Estilos para el navbar */
+.navbar {
+  .nav-link {
+    color: $dark; // Color base para el enlace
+
+    &:hover {
+      color: $dark; // Color en hover
+      font-weight: 400;
+    }
+
+    &.active {
+      color: $primary; // Color del enlace activo
+      font-weight: bold;
+      border-bottom: 2px solid $primary; // Línea inferior en el activo
+    }
+  }
+}  

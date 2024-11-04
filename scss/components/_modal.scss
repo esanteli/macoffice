@@ -1,0 +1,16 @@
+.container_image_modal {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+     img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+     }
+    }
+     .custom-modal {
+        max-width: 800px; /* Ajusta este valor según tus necesidades */
+        width: 100%; /* Asegura que ocupe el 100% del ancho definido */
+    }     
