@@ -1,4 +1,5 @@
 h4 {
+  font-size: 3rem;
     color: $dark;
     font-weight: 600;
     opacity: 0; /* Oculto inicialmente */
@@ -11,15 +12,15 @@ h4 {
     }
   }
 
-  h5 {
-    color: #a7b8d4;
-    font-weight: 600;
-    opacity: 0; /* Oculto inicialmente */
-    transform: translateY(30px); /* Desplazado hacia abajo inicialmente */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  
-    &.visible {
-      opacity: 1; /* Se muestra cuando es visible */
-      transform: translateY(0); /* Vuelve a su posición original */
-    }
-  }  
+h5 {
+  color: #a7b8d4;
+  font-weight: 600;
+  opacity: 0; /* Oculto inicialmente */
+  transform: translateY(30px); /* Desplazado hacia abajo inicialmente */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.visible {
+    opacity: 1; /* Se muestra cuando es visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
+}  

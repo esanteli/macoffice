@@ -13,6 +13,7 @@ $primary: #a7b8d4;
 $danger: #ff4136;
 $dark: #14223a;
 
+
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
@@ -23,7 +24,7 @@ $theme-colors: (
 body {
     font-family: $font-family-base;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     line-height: 1.7em;
     color: var(--text-color);
@@ -31,5 +32,63 @@ body {
     @media screen and (max-width: 768px) {
       margin-left: 10px;
       margin-right: 10px;
+}
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  font-size: 32px;
+
+
+ &:hover {
+  transform: scale(1.1);
+}
+
+ img {
+  width: 40px;
+  height: 40px;
+}
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gifbackground {
+  position: absolute; /* Permite posicionarlo de manera absoluta respecto al contenedor */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajusta el ancho del fondo, puedes modificar según tu diseño */
+  height: 100%; /* Ajusta el alto del fondo, puedes modificar según tu diseño */
+  z-index: -1; /* Envía el fondo detrás del contenido */
+  display: flex; /* Opcional: Para centrar el GIF si cambias su tamaño */
+  align-items: center; /* Opcional: Centrado vertical */
+  justify-content: space-around; /* Opcional: Centrado horizontal */
+
+
+ img {
+  width: 200px; /* Cambia el tamaño del GIF a tu preferencia */
+  height: auto; /* Mantiene la proporción del GIF */
+  pointer-events: none; /* Evita que interfiera con la interacción del usuario */
+
+  @media (max-width: 768px) {
+   display: none;
+  }
 }
 }

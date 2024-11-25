@@ -55,13 +55,13 @@
              <a class="nav-link text-dark" aria-current="page" href="../index.html">Inicio</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link text-dark" href="servicios.html">Servicios</a>
+             <a class="nav-link text-dark" href="../pages/servicios.html">Servicios</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+             <a class="nav-link text-dark" href="../pages/nosotros.html">Nosotros</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link text-dark active" href="proyectos.html">Proyectos</a>
+            <a class="nav-link text-dark active" href="../pages/proyectos.html">Proyectos</a>
           </li>
          </ul>
          <span class="navbar-text">
@@ -71,7 +71,76 @@
      </div>
     </nav>   
            </header>
+           <section>
+            <div class="slider" style="height: 400px; margin-bottom: 30px;">               
+                <div class="list">
+                    <div class="item">
+                        <img src="../images/diabetes.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/camarografo.webp" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/miebach.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/eventohotelantof.png" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>            
+                </ul>
+            </div>   
+           </section>
+<section>
+    <div class="container">       
+        <div id="filterTabs">
+        <ul class="nav nav-tabs" id="filterTabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-filter="all" href="#">Todos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="stand" href="#">Diseño de implementación de stand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="eventos" href="#">Producción de eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="carteleria" href="#">Cartelería digital</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="equipos" href="#">Venta y arriendo de equipos</a>
+            </li>
+          </ul>
           
+          <div class="projects">
+            <div class="project-item stand">Proyecto 1: Stand</div>
+            <div class="project-item eventos">Proyecto 2: Evento</div>
+            <div class="project-item carteleria">Proyecto 3: Cartelería</div>
+            <div class="project-item equipos">Proyecto 4: Equipos</div>
+            <div class="project-item stand">Proyecto 5: Stand</div>
+            <div class="project-item eventos">Proyecto 6: Evento</div>
+          </div>
+
+    </div>
+    </div>
+</section>
+<section>
+    <div class="container mt-4">
+        <div class="btn-cotiza d-flex justify-content-between">
+            <span>Pronto más noticias </span>
+            <a href="https://wa.me/+56991563284?text=¡Hola!%20Quisiera%20más%20información.">¿Necesitas ayuda?</a>
+    
+        </div>
+    </div>
+   </section>           
 <footer>
     <!-- Primera línea: Descripción de la empresa -->
     <div class="footer-description">
@@ -122,6 +191,9 @@
         Diseñado por Like10 
     </div>
 </div>
+<a href="https://wa.me/+56991563284?text=¡Hola!%20Quisiera%20más%20información." class="whatsapp-float" target="_blank" aria-label="Chat de WhatsApp">
+    <img src="https://image.shutterstock.com/image-vector/whatsapp-icon-logo-vector-260nw-1370730955.jpg" alt="WhatsApp">
+</a>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -169,15 +241,56 @@
     </div>
   </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-    </script>
-    
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS desde CDN (incluye Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-qmYzO1wXfpoJWaXoUmh6LDeAjfOp57P/9hK9uoGUtqlzEdPF+d3GMuCs7SVPG4cL" 
+        crossorigin="anonymous"></script>
+
+<!-- Archivo app.js personalizado -->
+<script src="js/app.js" defer></script>
+
+<!-- Scroll to Top -->
+<script defer>
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+<!-- Script para Tabs -->
+<script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll("#filterTabs .nav-link");
+    const projects = document.querySelectorAll(".project-item");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Manejar activación de pestañas
+            tabs.forEach(t => t.classList.remove("active"));
+            this.classList.add("active");
+
+            // Obtener el filtro
+            const filter = this.getAttribute("data-filter");
+
+            // Filtrar proyectos
+            projects.forEach(project => {
+                if (filter === "all" || project.classList.contains(filter)) {
+                    project.classList.add("show");
+                    project.style.display = "block"; // Mostrar proyecto
+                } else {
+                    project.classList.remove("show");
+                    project.style.display = "none"; // Ocultar proyecto
+                }
+            });
+        });
+    });
+});
+</script>
+<script src="../js/app.js"></script>
+
 </body>
 </html>

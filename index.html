@@ -30,10 +30,10 @@
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="deski/css/responsive.css">
     <link rel="icon" href="images/favicon_mac.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
 
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
@@ -77,22 +77,20 @@
         <div class="slider">
             <div class="text-overlay">
                 <div class="content">
-                    <h2>Bienvenido</h2>
-                    <p>“Más de 30 años creando experiencias audiovisuales en la
-                        región de Antofagasta. Soluciones integrales para eventos, educación y
-                        cartelería digital.”</p>
+                    <h2 id="slideText">Somos Líderes en Producción de Eventos</h2>
+                    <p>Te proponemos sentarnos a conversar de tu visión y nosotros desarrollaremos el resto.</p>
                     <button class="cta-btn">Ver más</button>
                 </div>
             </div>
             <div class="list">
                 <div class="item">
-                    <img src="images/banner_vr.webp" alt="">
-                </div>
-                <div class="item">
                     <img src="images/banner_mac_3.webp" alt="">
                 </div>
                 <div class="item">
-                    <img src="images/banner_vr2.webp" alt="">
+                    <img src="images/banner_vr.webp" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/disenostand3d.webp" alt="">
                 </div>
                 <div class="item">
                     <img src="images/banner_tactil.webp" alt="">
@@ -121,12 +119,18 @@
             
         </div>
     <section>
-<div class="container lg-container">
+<div class="container lg-container" style="position: relative; z-index: 1; overflow: hidden;">
+    <div class="gifbackground">
+        <img src="images/gif/circuloprimary.gif" alt="Fondo animado">
+        <img src="images/gif/circuloazul.gif" alt="Fondo animado">
+        <img src="images/gif/circulorojo.gif" alt="Fondo animado">
+    </div>
     <div class="row">
         <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up">
             <div class="block-style-twentySeven">
                 <div class="icon d-flex align-items-end justify-content-center"><img src="images/evento_icon.svg" alt=""></div>
                 <h4 class="font-gordita text-dark">Producción de eventos</h4>
+            
                 <div class="btn-vermas" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                   </svg></div>
@@ -135,7 +139,7 @@
         <div class="col-lg-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="block-style-twentySeven">
                 <div class="icon d-flex align-items-end justify-content-center"><img src="images/luces_icon.svg" alt=""></div>
-                <h4 class="font-gordita">Alquiler / venta de equipos</h4>
+                <h4 class="font-gordita">Venta y arriendo de equipos audiovisuales</h4>
                 <div class="btn-vermas" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                   </svg></div>
@@ -156,7 +160,7 @@
                 <h4 class="font-gordita">Diseño y producción de stand</h4>
                 <div class="btn-vermas" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                  </svg><i class="bi bi-arrow-right-short"></i></div>
+                  </svg></div>
             </div> <!-- /.block-style-twentySeven -->
         </div>
     </div>
@@ -165,7 +169,7 @@
 <section>
     <div class="container">
     <div class="btn-cotiza d-flex justify-content-between">
-        <span> Cotiza con nosotros ahora </span>
+        <span>Cotiza con nosotros ahora </span>
         <div href="#">Solicitar presupuesto</div>
 
     </div>
@@ -174,7 +178,7 @@
 <div class="container">
     <div class="d-flex align-items-center justify-content-between">
     <h4 class="justify-content-start d-flex flex-row bold" style="margin: 80px 0px 80px 10px;">
-            Conoce algunos de nuestros <span style="margin-left: 10px;  color: #859fae;">PROYECTOS</span> </h4>
+            Conoce algunos de nuestros <span style="margin-left: 10px;  color: #859fae;">Ultimos Proyectos</span> </h4>
             <button class="cta-btn">Ver más</button>
     </div>
     
@@ -182,44 +186,47 @@
 <section>
     <div class="container">
     <div class="row">
-    <div class="col-md-6 col-12">
-        <div class="container-proyecto" style="background-image: url('images/banne_mac_1080.jpg'); background-size: cover; background-position: center;">
+    <div class="col-md-6 col-12 mb-3">
+        <div class="container-proyecto" style="background-image: url('images/miebach.png'); background-size: cover; background-position: center;">
             <div class="d-flex flex-column align-items-start justify-content-center">
-         <div class="titulo-proyecto"> COBRA</div>
-         <div class="tag-proyecto">Diseño de Stand</div>
+         <div class="titulo-proyecto"> Empresa Miebach </div>
+         <div class="tag-proyecto">Diseño de implementación de stand</div>
          </div>
          <div class="description-proyecto">
               Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
         
       </div>
     </div>
-    <div class="col-md-6 col-12">
-        <div class="container-proyecto" style="background-image: url('images/banne_mac_1080.jpg'); background-size: cover; background-position: center;">
+    <div class="col-md-6 col-12 mb-3">
+        <div class="container-proyecto" style="background-image: url('images/eventohotelantof.png'); background-size: cover; background-position: center;">
               <div class="d-flex flex-column align-items-start justify-content-center">
-           <div class="titulo-proyecto"> Hotel Antofagasta</div>
-           <div class="tag-proyecto">Evento</div>
+           <div class="titulo-proyecto"> Hotel Antofagasta | Cena mujer & minería 2024
+        </div>
+           <div class="tag-proyecto">Producción de Eventos</div>
            </div>
            <div class="description-proyecto">
                 Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
           
         </div>
         </div>
-    <div class="col-md-6 col-12">
-        <div class="container-proyecto" style="background-image: url('images/banne_mac_1080.jpg'); background-size: cover; background-position: center;">
+    <div class="col-md-6 col-12 mb-3">
+        <div class="container-proyecto" style="background-image: url('images/diabetes.png'); background-size: cover; background-position: center;">
             <div class="d-flex flex-column align-items-start justify-content-center">
-         <div class="titulo-proyecto"> Hotel Antofagasta</div>
-         <div class="tag-proyecto">Evento</div>
+         <div class="titulo-proyecto"> Universidad de Antofagasta | Tecnología e Innovación en Diabetes
+        </div>
+         <div class="tag-proyecto">Producción de Eventos</div>
          </div>
          <div class="description-proyecto">
               Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
         
       </div>
         </div>
-        <div class="col-md-6 col-12">
-            <div class="container-proyecto" style="background-image: url('images/banne_mac_1080.jpg'); background-size: cover; background-position: center;">
+        <div class="col-md-6 col-12 mb-3">
+            <div class="container-proyecto" style="background-image: url('images/arriendotele.png'); background-size: cover; background-position: center;">
                 <div class="d-flex flex-column align-items-start justify-content-center">
-             <div class="titulo-proyecto"> Hotel Antofagasta</div>
-             <div class="tag-proyecto">Evento</div>
+             <div class="titulo-proyecto"> Macoffice |  Innovafest 2024
+            </div>
+             <div class="tag-proyecto">Venta y arriendo de equipos</div>
              </div>
              <div class="description-proyecto">
                   Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
@@ -236,55 +243,42 @@
     </div>
     
 </div>
-<section>
+<section class="mb-2">
     <div class="container">
     <div class="row">
     <div class="col-md-6 col-12">
-        <h5 class="justify-content-start d-flex flex-row bold" style="margin:80px 0px 30px 0px;">Testimonios</h5>
+        <h5 class="justify-content-start d-flex flex-row bold" style="margin:80px 0px 30px 0px;">Proovedores</h5>
         <div id="slider2" class="slider2">
             <div class="list">
-                <div class="item2">
-                    <div>
-                        <span class="txt_testimonio">"En Macoffice encontramos un aliado estratégico para nuestra empresa"</span>
-                        <hr>
-                        <div class="d-flex flex-row align-items-center justify-content-start"> 
-                            <div class="circle-container">
-                            <div class="inner-content">
-                                <img src="images/4x4_4.png">
+                <div class="item2">                  
+                        <div>
+                            <div class="d-flex flex-row align-items-center justify-content-start"> 
+                                <div class="cliente-container">
+                                <div class="inner-content">
+                                    <img src="images/proveedores/active-floor-500.webp">
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex flex-column align-items-start">
-                            <span class="txt_cliente"> Nombre Apellido</span>
-                            <span class="txt_empresa"> Empresa SPA</span> 
-                        </div>
-                       
-
-                    </div> 
-                   <span class="txt_fecha_testimonio">hace 2 meses</span>                   
-                         
-                        
-                        
-                    </div>
-                    
+                           
+    
+                        </div> 
+                       <span class="txt_fecha_testimonio">Active floor</span>                   
+                             
+                            
+                            
+                        </div>                                    
                 </div>
                 <div class="item2">
                     <div>
-                        <span class="txt_testimonio">"En Macoffice encontramos un aliado estratégico para nuestra empresa"</span>
-                        <hr>
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
-                            <div class="circle-container">
+                            <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/4x4_2.png">
+                                <img src="images/proveedores/class saathi.png">
                             </div>
-                        </div>
-                        <div class="d-flex flex-column align-items-start">
-                            <span class="txt_cliente"> Nombre Apellido</span>
-                            <span class="txt_empresa"> Empresa SPA</span> 
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">hace 2 meses</span>                   
+                   <span class="txt_fecha_testimonio">Class Saathi</span>                   
                          
                         
                         
@@ -292,22 +286,16 @@
                 </div>
                 <div class="item2">
                     <div>
-                        <span class="txt_testimonio">"En Macoffice encontramos un aliado estratégico para nuestra empresa"</span>
-                        <hr>
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
-                            <div class="circle-container">
+                            <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/4x4_3.png">
+                                <img src="images/proveedores/datavideo-vector-logo.png">
                             </div>
-                        </div>
-                        <div class="d-flex flex-column align-items-start">
-                            <span class="txt_cliente"> Nombre Apellido</span>
-                            <span class="txt_empresa"> Empresa SPA</span> 
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">hace 2 meses</span>                   
+                   <span class="txt_fecha_testimonio">Datavideo</span>                   
                          
                         
                         
@@ -315,22 +303,16 @@
                 </div>
                 <div class="item2">
                     <div>
-                        <span class="txt_testimonio">"En Macoffice encontramos un aliado estratégico para nuestra empresa"</span>
-                        <hr>
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
-                            <div class="circle-container">
+                            <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/4x4.png">
+                                <img src="images/proveedores/horion.png">
                             </div>
-                        </div>
-                        <div class="d-flex flex-column align-items-start">
-                            <span class="txt_cliente"> Nombre Apellido</span>
-                            <span class="txt_empresa"> Empresa SPA</span> 
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">hace 2 meses</span>                   
+                   <span class="txt_fecha_testimonio">Horion</span>                   
                          
                         
                         
@@ -358,7 +340,7 @@
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
                             <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/logo_mac_color.svg">
+                                <img src="images/clientes/COBRA_RGB.png">
                             </div>
                             
                         </div>
@@ -366,7 +348,7 @@
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">Macoffice - Antofagasta</span>                   
+                   <span class="txt_fecha_testimonio">COBRA - Antofagasta</span>                   
                          
                         
                         
@@ -378,13 +360,13 @@
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
                             <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/logo_mac_color.svg">
+                                <img src="images/clientes/hotel antofa.png">
                             </div>
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">Macoffice - Antofagasta</span>                   
+                   <span class="txt_fecha_testimonio">Hotel Antofagasta - Antofagasta</span>                   
                          
                         
                         
@@ -395,13 +377,13 @@
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
                             <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/logo_mac_color.svg">
+                                <img src="images/clientes/inacap.png">
                             </div>
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">Macoffice - Antofagasta</span>                   
+                   <span class="txt_fecha_testimonio">Inacap - Antofagasta</span>                   
                          
                         
                         
@@ -412,13 +394,47 @@
                         <div class="d-flex flex-row align-items-center justify-content-start"> 
                             <div class="cliente-container">
                             <div class="inner-content">
-                                <img src="images/logo_mac_color.svg">
+                                <img src="images/clientes/abbott-logo.png">
                             </div>
                         </div>
                        
 
                     </div> 
-                   <span class="txt_fecha_testimonio">Macoffice - Antofagasta</span>                   
+                   <span class="txt_fecha_testimonio">Abbott - Antofagasta</span>                   
+                         
+                        
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="d-flex flex-row align-items-center justify-content-start"> 
+                            <div class="cliente-container">
+                            <div class="inner-content">
+                                <img src="images/clientes/hotel spark.png">
+                            </div>
+                        </div>
+                       
+
+                    </div> 
+                   <span class="txt_fecha_testimonio">Hotel Spark - Antofagasta</span>                   
+                         
+                        
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="d-flex flex-row align-items-center justify-content-start"> 
+                            <div class="cliente-container">
+                            <div class="inner-content">
+                                <img src="images/clientes/hotel DA.png">
+                            </div>
+                        </div>
+                       
+
+                    </div> 
+                   <span class="txt_fecha_testimonio">Hoteles Diego de Almagro - Antofagasta</span>                   
                          
                         
                         
@@ -433,7 +449,9 @@
                 <li class="active"></li>
                 <li></li>
                 <li></li>
-                <li></li>            
+                <li></li>
+                <li></li>
+                <li></li>             
             </ul>
         </div> 
     </div>      
@@ -442,6 +460,7 @@
  
     </div>
 </section>
+
 <footer>
     <!-- Primera línea: Descripción de la empresa -->
     <div class="footer-description">
@@ -492,45 +511,88 @@
         Diseñado por Like10 
     </div>
 </div>
+<a href="https://wa.me/+56991563284?text=¡Hola!%20Quisiera%20más%20información." class="whatsapp-float text-white" target="_blank" aria-label="Chat de WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Comencemos a trabajar juntos</h5>
+                <h4 class="modal-title my-2" id="exampleModalLabel">Comencemos a trabajar juntos</h4>
+                <h4 class="text-primary mx-2 my-2">,Tus proyectos nos inspiran.</h4>   
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
             </div>
-            <div class="modal-body">
-                <div class="container_image_modal">
-                    <img src="images/banne_mac_1080.jpg" class="img-fluid">
+            <div class="modal-body px-4">
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="container_image_modal">
+                        <img src="images/banner_vr2.webp" class="img-fluid">
+                    </div>
+                    <h6 class="my-3">Otros Contactos</h6>
+            <!-- Teléfono -->
+            <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-phone text-primary me-2"></i>
+                <span>+596 9156 3284</span>
+            </div>
+            <!-- Dirección -->
+            <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <a href="https://www.google.com/maps/search/?api=1&query=Pasaje+independencia+3698,+Antofagasta" 
+                   target="_blank" 
+                   class="text-decoration-none text-dark">
+                    Pasaje independencia 3698, Antofagasta
+                </a>
+            </div>
+            <hr>
+            <div class="social-media">
+                <h6 class="my-2">Síguenos en nuestras redes</h6>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-2" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></a>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg></a>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-2" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg></a>
+            </div>
                 </div>
-                <form>
+            <div class="col-md-6">
+                <form action="enviar.php" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
                     </div>
                     <div class="form-group">
                         <label for="projectType">Tipo de Proyecto</label>
-                        <select class="form-control" id="projectType" required>
+                        <select class="form-control" id="projectType" name="projectType" required>
                             <option value="" disabled selected>Selecciona un tipo de proyecto</option>
                             <option value="produccion_eventos">Producción de eventos</option>
-                            <option value="alquiler_venta_equipos">Alquiler / venta de equipos</option>
+                            <option value="alquiler_venta_equipos">Venta y arriendo de equipos</option>
                             <option value="carteleria_digital">Cartelería digital</option>
                             <option value="diseno_produccion_stand">Diseño y producción de stand</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escribe tu mensaje aquí" required></textarea>
                     </div>
-                    <div class="modal-footer">
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6LdwXYgqAAAAANYHg2JFaxIbybVNoOKJYDdt53V5"></div>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    
+                    <div class="modal-footer mt-3">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </form>
+            </div>
+        </div>
             </div>
         </div>
     </div>

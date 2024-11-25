@@ -111,12 +111,12 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: $text-overlay-color;
     z-index: 10;
-    background: $background-overlay;
-    backdrop-filter: blur(10px);
+    //background: $background-overlay;
+    //backdrop-filter: blur(10px);
     padding: 10px 20px;
     border-radius: 20px;
 
@@ -126,21 +126,22 @@
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-bottom: 1rem;
         color: $font-color-white;
     }
 
     p {
         text-align: start;
-        font-size: 14px;
+        font-size: 1.2rem;
         margin-bottom: 1.5rem;
     }
 }
 
 .cta-btn {
     padding: 10px 20px;
-    background: linear-gradient(to left, $primary-color, $secondary-color);
+    background: $background-overlay;
+    backdrop-filter: blur(10px);
     color: $font-color-white;
     border: none;
     cursor: pointer;
@@ -454,4 +455,186 @@
 }
 
 
-    
+.slider4 {
+    width: 1280px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(21, 21, 21, 0.09);
+
+    .list {
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition: 1s;
+
+        .item {
+            width: 1280px;
+            height: 400px; /* Se adapta a la altura del contenedor */
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider4 {
+        height: 300px;
+        width: 100%;
+    }
+
+    .slider4 .list {
+        width: 100%;
+        display: flex;
+    transition: transform 1s ease; /* Cambié left por transform */
+    }
+
+    .slider4 .item {
+        width: 100%; /* Ajusta el ancho del item al ancho del slider */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px 5px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+
+
+    .buttons4 {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0);
+            color: $font-color-white;
+            border: none;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+    }
+
+    .dots4 {
+        position: absolute;
+        top: 10px; /* Ubicación en la parte superior */
+        right: 10px; /* Alineación a la derecha */
+        color: $primary;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: $primary;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 0.5s;
+
+            &.active {
+                width: 30px;
+            }
+        }
+    }
+.historiaitem   {
+    height: 500px;
+    width: 100%;
+    overflow: hidden; // Oculta cualquier contenido que sobresalga
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin:10px 10px 10px 10px ;
+
+
+    .inner-content {
+        width: 100%;
+        height:  100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        
+
+        img {
+            width: 100%; 
+            height: 100px;
+            object-fit: contain; // Asegura que la imagen llene el círculo
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.imagen_nosotros {
+    width: auto;
+  height: 100%;
+  object-fit: contain; // Asegura que la imagen se ajuste sin perder la relación de aspecto.
+  object-position: center; // Centra la imagen si es más pequeña que el contenedor.
+  background-repeat: no-repeat; // Evita que la imagen se repita si no cubre el área.
+  display: block; // Hace que la imagen se trate como un bloque para facilitar la alineación.
+border-radius: 2rem;
+  // Asegura que la imagen se ajuste de manera responsiva
+  max-width: 100%; // Impide que la imagen exceda el tamaño del contenedor.
+  max-height: 100vh; // Asegura que no se salga de la pantalla en la dimensión vertical.
+  // En dispositivos pequeños, la imagen se ajusta automáticamente al tamaño del contenedor
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 20px 0px;
+    height: auto; // Deja que el alto se ajuste en dispositivos más pequeños si es necesario.
+  }
+}
+
+.text_historia{
+        color: #14223a;
+        margin: 10px 10px 10px 10px;
+        font-size: 15px;
+}
+
+.text_servicio_index{
+    color: #14223a;
+    margin: 0px 10px 20px 10px;
+    font-size: 12px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-style: none;
+  img {
+    width: 100%; // Se asegura de que la imagen ocupe el ancho del contenedor.
+    height: 500px; // Mantiene una altura específica para el contenedor.
+    object-fit: cover; // Hace que la imagen cubra el contenedor sin deformarse.
+    object-position: center; // Centra la imagen dentro del contenedor.
+    background-repeat: no-repeat; // Evita cualquier repetición en caso de fallos.
+    display: block; // Elimina el espacio blanco que algunos navegadores dejan alrededor de las imágenes.
+    max-width: 100%; // Garantiza que la imagen no se expanda más allá del ancho del contenedor.
+    max-height: 100vh; // Limita la altura máxima al tamaño de la ventana del navegador.
+  
+    // Responsividad
+    @media (max-width: 768px) {
+      height: 300px; // Ajusta la altura para pantallas más pequeñas.
+    }
+  
+    @media (max-width: 480px) {
+      height: 200px; // Ajusta la altura para pantallas muy pequeñas.
+    }
+  }
+}

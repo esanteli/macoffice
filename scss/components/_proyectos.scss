@@ -39,7 +39,7 @@
 
     h4 {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 1rem;
         letter-spacing: -0.5px;
         margin: 20px 0;
         color: $background-dark;
@@ -125,7 +125,7 @@
 }
 
 .description-proyecto {
-    background-color: #14223a7f;
+    background-color: none;
     color: white;
     font-size: x-small;
     display: flex;
@@ -146,7 +146,7 @@
 .titulo-proyecto {
     background-color: white;
     color: $dark;
-    font-size:  small;
+    font-size:  1rem;
     font-weight: 600;
     display: flex;
     flex-direction: row;

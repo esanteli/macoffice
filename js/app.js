@@ -14,7 +14,7 @@ prev.onclick = function(){
     active = active - 1 >= 0 ? active - 1 : lengthItems;
     reloadSlider();
 }
-let refreshInterval = setInterval(()=> {next.click()}, 3000);
+let refreshInterval = setInterval(()=> {next.click()}, 5000);
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
     // 
@@ -23,7 +23,7 @@ function reloadSlider(){
     dots[active].classList.add('active');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next.click()}, 3000);
+    refreshInterval = setInterval(()=> {next.click()}, 5000);
 
     
 }
@@ -118,6 +118,7 @@ window.onresize = function(event) {
     reloadSlider1();
     reloadSlider2();
     reloadSlider3();
+
 };
 
 
@@ -160,3 +161,77 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Ejecuta la verificación al cargar la página
   });
+
+
+// Slider Text-Overlay
+
+(function() {
+    let slider = document.querySelector('.slider .list');
+    let items = document.querySelectorAll('.slider .list .item');
+    let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let dots = document.querySelectorAll('.slider .dots li');
+
+    // Textos que aparecerán en cada slide
+    let slideTexts = [
+        "Somos Líderes en Producción de Eventos",
+        "Innovación en Tecnología en Educación",
+        "Diseño e Implementación de Stand",
+        "Cartelería Digital"
+    ];
+
+    // Textos que aparecerán en los párrafos de cada slide
+    let slideParagraphs = [
+        "Te proponemos sentarnos a conversar de tu visión y nosotros desarrollaremos el resto.",
+        "Entregamos herramientas Innovadoras que permitan mejorar el proceso educativo.",
+        "Trabajamos con los espacios aplicando diseño, tecnología e implementación.",
+        "Generamos mayor visibilidad del contenido, evento o imagen corporativa de tu empresa."
+    ];
+
+    let h2Text = document.querySelector('.text-overlay h2');
+    let pText = document.querySelector('.text-overlay p');
+
+    let lengthItems = items.length - 1;
+    let active = 0;
+
+    next.onclick = function() {
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
+    }
+
+    prev.onclick = function() {
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
+    }
+
+    // Ajuste del intervalo a 5 segundos
+    let refreshInterval = setInterval(() => { next.click() }, 5000);
+
+    function reloadSlider() {
+        slider.style.left = -items[active].offsetLeft + 'px';
+        
+        // Actualiza el texto en el h2 con el texto correspondiente al slide actual
+        h2Text.textContent = slideTexts[active];
+        
+        // Actualiza el texto en el p con el texto correspondiente al slide actual
+        pText.textContent = slideParagraphs[active];
+        
+        let last_active_dot = document.querySelector('.slider .dots li.active');
+        last_active_dot.classList.remove('active');
+        dots[active].classList.add('active');
+
+        clearInterval(refreshInterval);
+        refreshInterval = setInterval(() => { next.click() }, 5000);
+    }
+
+    dots.forEach((li, key) => {
+        li.addEventListener('click', () => {
+            active = key;
+            reloadSlider();
+        });
+    });
+
+    window.onresize = function(event) {
+        reloadSlider();
+    };
+})();
