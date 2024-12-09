@@ -23,6 +23,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!--link rel="stylesheet" type="text/css" href="css/estilos.css"-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- Main style sheet -->
@@ -83,17 +84,12 @@
                 </div>
                 <!-- Columna Descripción -->
                 <div class="col-md-6">
-                    <h2>Sobre Nosotros</h2>
-                    <p>
-                        Somos una empresa regional con más de 30 años, proporcionando Soluciones efectivas y eficientes en el área de la integración tecnológica audiovisual. Formada por profesionales comprometidos y con una constante inquietud por generar ideas innovadoras,
-atractivas y de vanguardia.
-                    </p>
-                    <p>                   
-La experiencia alcanzada en estos años nos ha permitido explorar y desarrollar en su totalidad el área de la producción de eventos, logrando de manera eficiente canalizar las inquietudes y expectativas de nuestros clientes. Además de encauzar en forma dinámica y
-sustentable el desarrollo de nuevas tecnologías colaborativas.
-                    </p>
+                    <h3>Sobre Nosotros</h3>
+                    <p class="text_historia my-3">Somos una empresa con más de treinta años de experiencia, proporcionando soluciones
+                        efectivas y eficientes tanto en el área de integración tecnológica audiovisual como en la
+                        producción de eventos. Formada por profesionales comprometidos y con una constante inquietud por generar ideas innovadoras y de vanguardia.</p>
                     <!-- Tabs -->
-                    <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                    <ul class="nav nav-tabs mt-3" id="aboutTabs" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="true">
                                 Misión
@@ -109,14 +105,14 @@ sustentable el desarrollo de nuevas tecnologías colaborativas.
                     <div class="tab-content mt-3" id="aboutTabsContent">
                         <!-- Misión -->
                         <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
-                            <p>
-                                Ser una empresa capacitada para atender las múltiples necesidades tecnológicas y audiovisuales que presenten nuestros clientes; proporcionándoles una solución efectiva y de inmejorable calidad, estableciendo una relación de respeto, seguridad y confianza.
+                            <p class="text_historia">
+                        Ser una empresa capacitada para atender las múltiples necesidades tecnológicas y audiovisuales que presenten nuestros clientes; proporcionándoles una solución efectiva y de inmejorable calidad, estableciendo una relación de respeto, seguridad y confianza.
                             </p>
                         </div>
                         <!-- Visión -->
                         <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
-                            <p>
-                                Consolidarse como una empresa líder e innovadora en la oferta de los medios tecnológicos audiovisuales de vanguardia y en la producción y desarrollo de eventos en general, contando con un equipo de profesionales multidisciplinarios para satisfacer con la
+                            <p class="text_historia">
+                        Consolidarse como una empresa líder e innovadora en la oferta de los medios tecnológicos audiovisuales de vanguardia y en la producción y desarrollo de eventos en general, contando con un equipo de profesionales multidisciplinarios para satisfacer con la
 máxima eficiencia posible los requerimientos de nuestros clientes.
 
                             </p>
@@ -275,45 +271,88 @@ máxima eficiencia posible los requerimientos de nuestros clientes.
         Diseñado por Like10 
     </div>
 </div>
+<a href="https://wa.me/+56991563284?text=¡Hola!%20Quisiera%20más%20información." class="whatsapp-float text-white" target="_blank" aria-label="Chat de WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Comencemos a trabajar juntos</h5>
+                <h4 class="modal-title my-2" id="exampleModalLabel">Comencemos a trabajar juntos</h4>
+                <h4 class="text-primary mx-2 my-2">,Tus proyectos nos inspiran.</h4>   
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
             </div>
-            <div class="modal-body">
-                <div class="container_image_modal">
-                    <img src="images/banne_mac_1080.jpg" class="img-fluid">
+            <div class="modal-body px-4">
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="container_image_modal">
+                        <img src="../images/banner_vr2.webp" class="img-fluid">
+                    </div>
+                    <h6 class="my-3">Otros Contactos</h6>
+            <!-- Teléfono -->
+            <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-phone text-primary me-2"></i>
+                <span>+596 9156 3284</span>
+            </div>
+            <!-- Dirección -->
+            <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <a href="https://www.google.com/maps/search/?api=1&query=Pasaje+independencia+3698,+Antofagasta" 
+                   target="_blank" 
+                   class="text-decoration-none text-dark">
+                    Pasaje independencia 3698, Antofagasta
+                </a>
+            </div>
+            <hr>
+            <div class="social-media">
+                <h6 class="my-2">Síguenos en nuestras redes</h6>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-2" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></a>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg></a>
+                <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-2" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg></a>
+            </div>
                 </div>
-                <form>
+            <div class="col-md-6">
+                <form action="enviar.php" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
                     </div>
                     <div class="form-group">
                         <label for="projectType">Tipo de Proyecto</label>
-                        <select class="form-control" id="projectType" required>
+                        <select class="form-control" id="projectType" name="projectType" required>
                             <option value="" disabled selected>Selecciona un tipo de proyecto</option>
                             <option value="produccion_eventos">Producción de eventos</option>
-                            <option value="alquiler_venta_equipos">Alquiler / venta de equipos</option>
+                            <option value="alquiler_venta_equipos">Venta y arriendo de equipos</option>
                             <option value="carteleria_digital">Cartelería digital</option>
                             <option value="diseno_produccion_stand">Diseño y producción de stand</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escribe tu mensaje aquí" required></textarea>
                     </div>
-                    <div class="modal-footer">
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6LdwXYgqAAAAANYHg2JFaxIbybVNoOKJYDdt53V5"></div>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    
+                    <div class="modal-footer mt-3">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </form>
+            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -332,6 +371,7 @@ máxima eficiencia posible los requerimientos de nuestros clientes.
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/slider4.js"></script>
+    <script src="../js/app.js"></script>
     
     
 </body>

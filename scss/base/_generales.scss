@@ -12,12 +12,16 @@ $background-overlay: rgba(49, 59, 76, 0.5);
 $primary: #a7b8d4;
 $danger: #ff4136;
 $dark: #14223a;
+$warning: #5e83c1;
+$card-border-color: white;
+$card-border-radius: 30px;
 
 
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
   "dark": $dark,
+  "warning": $warning,
 );
 
 

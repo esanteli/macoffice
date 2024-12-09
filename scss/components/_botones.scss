@@ -1,5 +1,41 @@
-.btn-vermas {
+.btn-vermas-primary {
     background-color: $primary-color;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    text-align: center;
+    color: $font-color-white;
+    font-size: 10px;
+    width: 100px;
+}
+
+.btn-vermas-azul-light {
+    background-color: #5e83c1;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    text-align: center;
+    color: $font-color-white;
+    font-size: 10px;
+    width: 100px;
+}
+
+.btn-vermas-azul {
+    background-color: #14223a;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    text-align: center;
+    color: $font-color-white;
+    font-size: 10px;
+    width: 100px;
+}
+
+.btn-vermas-rojo {
+    background-color: #e33433;
     border-radius: 2rem;
     align-items: center;
     justify-content: center;

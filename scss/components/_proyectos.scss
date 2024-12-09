@@ -113,7 +113,7 @@
     color: white;
     height: 20px;
     font-size: small;
-    font-weight: 600;
+    font-weight: 400;
     padding: 20px 10px 20px 10px;
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@
 }
 
 .description-proyecto {
-    background-color: none;
+    background-color: transparent;
     color: white;
     font-size: x-small;
     display: flex;
@@ -133,20 +133,31 @@
     justify-content: flex-end;
     align-items: center;
     border-radius: 10px;
-    margin: 10px 0px;
+    margin: 10px 0;
     padding: 10px;
     width: 100%;
     text-align: left; /* Alineación del texto a la izquierda */
     line-height: 1.5; /* Espaciado entre líneas */
     max-height: 200px; /* Altura máxima del contenedor */
-    overflow-y: none;
-}
+    overflow-y: hidden; /* Evitar scroll interno */
+    position: relative;
+    transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+    opacity: 0; /* Inicialmente invisible */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  
+    &:hover {
+      transform: translateY(0); /* Desplazamiento a su posición original */
+      opacity: 1; /* Aparece gradualmente */
+    }
+  }
+  
+
 
 
 .titulo-proyecto {
     background-color: white;
     color: $dark;
-    font-size:  1rem;
+    font-size:  0.8rem;
     font-weight: 600;
     display: flex;
     flex-direction: row;
@@ -160,3 +171,29 @@
     max-height: 150px; /* Altura máxima del contenedor */
     overflow-y: auto;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espaciado entre columnas */
+  }
+  
+  .project-item {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .container-proyecto {
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    min-height: 200px; /* Ajusta según necesidad */
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr; /* Una sola columna */
+      gap: 15px; /* Ajuste del espaciado en pantallas pequeñas */
+    }
+  }

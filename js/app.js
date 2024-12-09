@@ -174,18 +174,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Textos que aparecerán en cada slide
     let slideTexts = [
-        "Somos Líderes en Producción de Eventos",
-        "Innovación en Tecnología en Educación",
-        "Diseño e Implementación de Stand",
+        "Somos Líderes en Producción",
+        "Innovación en Tecnología de la Educación",
+        "Diseño e Implementación de Stands",
         "Cartelería Digital"
     ];
 
     // Textos que aparecerán en los párrafos de cada slide
     let slideParagraphs = [
         "Te proponemos sentarnos a conversar de tu visión y nosotros desarrollaremos el resto.",
-        "Entregamos herramientas Innovadoras que permitan mejorar el proceso educativo.",
-        "Trabajamos con los espacios aplicando diseño, tecnología e implementación.",
-        "Generamos mayor visibilidad del contenido, evento o imagen corporativa de tu empresa."
+        "Implementamos salas de trabajo con tecnología de vanguardia y soluciones diseñadas especialmente para tus necesidades.",
+        "Trabajamos en la implantación de los espacios combinando diseño y tecnología.",
+        "Realizamos la imagen de tu empresa entregando una visión dinámica y permanente."
     ];
 
     let h2Text = document.querySelector('.text-overlay h2');
