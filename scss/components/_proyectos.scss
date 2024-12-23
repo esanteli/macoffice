@@ -79,7 +79,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 20px;
     margin: 10px 5px 10px 5px;
     padding: 10px 20px;
@@ -130,29 +130,42 @@
     font-size: x-small;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
     width: 100%;
-    text-align: left; /* Alineación del texto a la izquierda */
-    line-height: 1.5; /* Espaciado entre líneas */
-    max-height: 200px; /* Altura máxima del contenedor */
-    overflow-y: hidden; /* Evitar scroll interno */
+    text-align: left;
+    line-height: 1.5;
+    max-height: 200px;
+    overflow-y: hidden;
     position: relative;
-    transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
-    opacity: 0; /* Inicialmente invisible */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  
-    &:hover {
-      transform: translateY(0); /* Desplazamiento a su posición original */
-      opacity: 1; /* Aparece gradualmente */
+
+    // Animación solo para pantallas grandes
+    @media (min-width: 768px) {
+        transform: translateY(20px);
+        opacity: 0;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+        .container-proyecto:hover & {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-  }
-  
 
-
+    // Estilo para pantallas pequeñas
+    @media (max-width: 767px) {
+        transform: none;
+        opacity: 1;
+        transition: none;
+        background-color: rgba(0, 0, 0, 0.6); // Fondo semi-transparente para mejor legibilidad
+        position: relative;
+        font-size: 0.8rem; // Texto ligeramente más grande en móvil
+        padding: 15px; // Padding más amplio
+        margin-top: auto; // Empuja la descripción hacia abajo
+    }
+}
 
 .titulo-proyecto {
     background-color: white;
@@ -195,5 +208,29 @@
     .projects {
       grid-template-columns: 1fr; /* Una sola columna */
       gap: 15px; /* Ajuste del espaciado en pantallas pequeñas */
+    }
+  }
+
+  // Ajustar el contenedor del proyecto para móviles
+  .container-proyecto {
+    @media (max-width: 767px) {
+        height: auto; // Altura automática en móvil
+        min-height: 350px; // Altura mínima para asegurar visibilidad
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &::before {
+            opacity: 0.7; // Overlay siempre visible en móvil
+        }
+    }
+  }
+
+  // Ajustar el título y tag para móviles
+  .titulo-proyecto,
+  .tag-proyecto {
+    @media (max-width: 767px) {
+        position: relative;
+        z-index: 2; // Asegurar que estén sobre el overlay
     }
   }

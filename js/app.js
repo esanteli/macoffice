@@ -58,10 +58,13 @@ prev2.onclick = function() {
 }
 let refreshInterval2 = setInterval(() => { next2.click() }, 3000);
 function reloadSlider2() {
-    slider2.style.left = -items2[active2].offsetLeft + 'px';
+    const itemWidth = window.innerWidth <= 768 ? window.innerWidth : 600;
+    slider2.style.transform = `translateX(-${active2 * itemWidth}px)`;
+    slider2.style.left = '0';
+    
     let lastActiveDot2 = document.querySelector('#slider2 .dots li.active');
-    lastActiveDot2.classList.remove('active');
-    dots2[active2].classList.add('active');
+    lastActiveDot2?.classList.remove('active');
+    dots2[active2]?.classList.add('active');
 
     clearInterval(refreshInterval2);
     refreshInterval2 = setInterval(() => { next2.click() }, 3000);
@@ -72,10 +75,9 @@ dots2.forEach((li, key) => {
         reloadSlider2();
     });
 });
-window.onresize = function(event) {
-    reloadSlider1();
+window.addEventListener('resize', () => {
     reloadSlider2();
-};
+});
 
 // Slider 3 (duplicado)
 let slider3 = document.querySelector('#slider3 .list');
@@ -96,12 +98,13 @@ prev3.onclick = function() {
 }
 let refreshInterval3 = setInterval(() => { next3.click() }, 3000);
 function reloadSlider3() {
-    slider3.style.left = -items3[active3].offsetLeft + 'px';
+    const itemWidth = window.innerWidth <= 768 ? window.innerWidth : 600;
+    slider3.style.transform = `translateX(-${active3 * itemWidth}px)`;
+    slider3.style.left = '0';
+    
     let lastActiveDot3 = document.querySelector('#slider3 .dots3 li.active');
-    if (lastActiveDot3) {
-        lastActiveDot3.classList.remove('active');
-    }
-    dots3[active3].classList.add('active');
+    lastActiveDot3?.classList.remove('active');
+    dots3[active3]?.classList.add('active');
 
     clearInterval(refreshInterval3);
     refreshInterval3 = setInterval(() => { next3.click() }, 3000);
@@ -111,6 +114,9 @@ dots3.forEach((li, key) => {
         active3 = key;
         reloadSlider3();
     });
+});
+window.addEventListener('resize', () => {
+    reloadSlider3();
 });
 
 // Mantener los sliders independientes en resize
@@ -125,7 +131,9 @@ window.onresize = function(event) {
 // animacion h4
 
 document.addEventListener("DOMContentLoaded", function () {
-    const targets = document.querySelectorAll("h4"); // Selecciona todos los <h4>
+    const targets = document.querySelectorAll("h4, h5"); // Incluye ambos selectores
+  
+    if (targets.length === 0) return; // Si no hay objetivos, no hagas nada
   
     function checkVisibility() {
       targets.forEach(target => {
@@ -133,36 +141,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
   
         if (rect.top <= windowHeight && rect.bottom >= 0) {
-          target.classList.add("visible"); // Aplica la clase "visible" para activar la animación
+          target.classList.add("visible");
         }
       });
     }
   
     window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // Ejecuta la verificación al cargar la página
+    checkVisibility(); // Ejecuta al cargar la página
   });
-
-  // animacion h5
-
-document.addEventListener("DOMContentLoaded", function () {
-    const targets = document.querySelectorAll("h5"); // Selecciona todos los <h4>
   
-    function checkVisibility() {
-      targets.forEach(target => {
-        const rect = target.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          target.classList.add("visible"); // Aplica la clase "visible" para activar la animación
-        }
-      });
-    }
-  
-    window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // Ejecuta la verificación al cargar la página
-  });
-
-
 // Slider Text-Overlay
 
 (function() {
@@ -174,8 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Textos que aparecerán en cada slide
     let slideTexts = [
-        "Somos Líderes en Producción",
-        "Innovación en Tecnología de la Educación",
+        "Producción de eventos",
+        "Innovación en Tecnologías de la Educación",
         "Diseño e Implementación de Stands",
         "Cartelería Digital"
     ];

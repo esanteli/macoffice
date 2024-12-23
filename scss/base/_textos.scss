@@ -5,7 +5,12 @@ h4 {
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(30px); /* Desplazado hacia abajo inicialmente */
     transition: opacity 0.5s ease, transform 0.5s ease;
-  
+    
+    &.hidden {
+      opacity: 0; /* Oculta si es necesario */
+      transform: translateY(30px);
+    }
+
     &.visible {
       opacity: 1; /* Se muestra cuando es visible */
       transform: translateY(0); /* Vuelve a su posición original */
@@ -19,8 +24,13 @@ h5 {
   transform: translateY(30px); /* Desplazado hacia abajo inicialmente */
   transition: opacity 0.5s ease, transform 0.5s ease;
 
+  &.hidden {
+    opacity: 0; /* Oculta si es necesario */
+    transform: translateY(30px);
+  }
   &.visible {
     opacity: 1; /* Se muestra cuando es visible */
     transform: translateY(0); /* Vuelve a su posición original */
   }
 }  
+

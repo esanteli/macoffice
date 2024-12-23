@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Digital marketing agency, Digital marketing company, Digital marketing services, sass, software company">
+    <meta name="description" content="Macoffice">
+      <meta property="og:site_name" content="deski">
+      <meta property="og:url" content="https://heloshape.com/">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Deski: creative saas and software html template">
+    <meta name='og:image' content='images/assets/ogg.png'>
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Macoffice</title>
-    <meta name="description" content="Descubre los proyectos innovadores de Macoffice en tecnología audiovisual y producción de eventos.">
-    <meta name="keywords" content="Macoffice, proyectos, tecnología audiovisual, producción de eventos">
-    <meta property="og:title" content="Proyectos - Macoffice">
-    <meta property="og:description" content="Descubre los proyectos innovadores de Macoffice en tecnología audiovisual y producción de eventos.">
-    <meta property="og:image" content="../images/favicon_mac.png">
-    <meta property="og:url" content="https://heloshape.com/proyectos.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Proyectos - Macoffice">
-    <meta name="twitter:description" content="Descubre los proyectos innovadores de Macoffice en tecnología audiovisual y producción de eventos.">
-    <meta name="twitter:image" content="../images/favicon_mac.png">
-    <link rel="icon" type="image/png" sizes="56x56" href="../images/favicon_mac.png">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#7034FF">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#7034FF">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7034FF">
+    <title>Macoffice</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!--link rel="stylesheet" type="text/css" href="css/estilos.css"-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Main style sheet -->
+    <!-- responsive style sheet -->
+    <link rel="icon" href="images/favicon_mac.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <!-- Fix Internet Explorer ______________________________________-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="vendor/html5shiv.js"></script>
+        <script src="vendor/respond.js"></script>
+    <![endif]-->	
 </head>
 <body>
     <div class="main-page-wrapper">
@@ -91,7 +110,7 @@
                         <img src="../images/diabetes.png" alt="">
                     </div>
                     <div class="item">
-                        <img src="../images/slideevento.jpg" alt="">
+                        <img src="../images/camarografo.webp" alt="">
                     </div>
                     <div class="item">
                         <img src="../images/miebach.png" alt="">
@@ -117,49 +136,196 @@
          
 <section>
     <div class="container">       
-        <ul class="nav nav-tabs" id="newsTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">Todos</button>
+        <div id="filterTabs">
+        <ul class="nav nav-tabs" id="filterTabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-filter="all" href="#">Todos</a>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab">Producción de Eventos</button>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="stand" href="#">Diseño de implementación de stand</a>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab">Innovación en Tecnología de la Educación</button>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="eventos" href="#">Producción de eventos</a>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="carteleria-tab" data-bs-toggle="tab" data-bs-target="#carteleria" type="button" role="tab">Cartelería Digital</button>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="carteleria" href="#">Cartelería digital</a>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="stand-tab" data-bs-toggle="tab" data-bs-target="#stand" type="button" role="tab">Diseño y Producción de Stand</button>
+            <li class="nav-item">
+              <a class="nav-link" data-filter="equipos" href="#">Innovación en tecnologías de la educación</a>
             </li>
-        </ul>
-        <div class="tab-content mt-4" id="newsContent">
-            <!-- Todos -->
-            <div class="tab-pane fade show active" id="all" role="tabpanel">
-                <div id="allNews" class="row"></div>
+          </ul>
+          
+          <div class="projects" id="projetcs">
+            <div class="project-item stand col"><div class="container-proyecto" style="background-image: url('../images/VENTA Y ARRIENDO/macoffice_meet.jpeg'); background-size: cover; background-position: center;">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+             <div class="titulo-proyecto"> Macoffice | Meeting Tecnológico </div>
+             <div class="tag-proyecto">Innovación en tecnologías de la educación</div>
+             </div>
+             <div class="description-proyecto">
+                Presentación a nuestros clientes de nuevos equipos tecnológicos año 2024, monitores interactivos, software educativo class sathi, active floor, cámara de realidad virtual, proyectores con tecnología láser.</div>
+            
+          </div></div>
+            <div class="project-item stand col"><div class="container-proyecto" style="background-image: url('../images/miebach.png'); background-size: cover; background-position: center;">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+             <div class="titulo-proyecto"> Empresa Miebach </div>
+             <div class="tag-proyecto">Diseño e implementación de stand</div>
+             </div>
+             <div class="description-proyecto">
+                  Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
+            
+          </div></div>
+          <div class="project-item stand col"><div class="container-proyecto" style="background-image: url('../images/VENTA Y ARRIENDO/FIDE.jpeg'); background-size: cover; background-position: center;">
+            <div class="d-flex flex-column align-items-start justify-content-center">
+         <div class="titulo-proyecto"> FIDE Temuco | Presentación Macoffice </div>
+         <div class="tag-proyecto">Innovación en tecnologías de la educación</div>
+         </div>
+         <div class="description-proyecto">
+          Participación en stand en la Universidad Católica de Temuco, dando a conocer nuestros productos. Monitor interactivo, software educativo class sathi, active floor y cámara de realidad virtual. Colaborando además con nuestros totem LED.</div>
+        
+      </div></div>
+            <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/eventohotelantof.png'); background-size: cover; background-position: center;">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+             <div class="titulo-proyecto"> Hotel Antofagasta | Cena mujer & minería 2024
+          </div>
+             <div class="tag-proyecto">Producción de Eventos</div>
+             </div>
+             <div class="description-proyecto">
+                  Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
+            
+          </div></div>       
+            <div class="project-item equipos"><div class="container-proyecto" style="background-image: url('../images/arriendotele.png'); background-size: cover; background-position: center;">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+             <div class="titulo-proyecto"> Macoffice |  Innovafest 2024
             </div>
-    
-            <!-- Eventos -->
-            <div class="tab-pane fade" id="events" role="tabpanel">
-                <div id="eventNews" class="row"></div>
+             <div class="tag-proyecto">Innovación en tecnologías de la educación</div>
+             </div>
+             <div class="description-proyecto">
+                  Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
+            
+          </div></div>
+            <div class="project-item stand">
+                <div class="container-proyecto" style="background-image: url('../images/STAND/simulacion_hotel.jpeg'); background-size: cover; background-position: center;">
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                 <div class="titulo-proyecto"> Hotel Antofagasta | Simulación Evento
+                </div>
+                 <div class="tag-proyecto">Diseño e implementación de stand</div>
+                 </div>
+                 <div class="description-proyecto">
+                    Diseño de maqueta virtual para configurar espacio y equipos en salón cobremar, Hotel Antofagasta.</div>
+                
+              </div>    
             </div>
-    
-            <!-- Tech -->
-            <div class="tab-pane fade" id="tech" role="tabpanel">
-                <div id="techNews" class="row"></div>
+            <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/diabetes.png'); background-size: cover; background-position: center;">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+             <div class="titulo-proyecto"> Universidad de Antofagasta | Tecnología e Innovación en Diabetes
             </div>
-    
-            <!-- Carteleria (antes Sports) -->
-            <div class="tab-pane fade" id="carteleria" role="tabpanel">
-                <div id="carteleriaNews" class="row"></div>
-            </div>
-    
-            <!-- Stand -->
-            <div class="tab-pane fade" id="stand" role="tabpanel">
-                <div id="standNews" class="row"></div>
-            </div>
+             <div class="tag-proyecto">Producción de Eventos</div>
+             </div>
+             <div class="description-proyecto">
+                  Ofrecemos un servicio integral de producción de eventos para seminarios de capacitación, garantizando una experiencia profesional y fluida. Nos encargamos de la planificación, logística, y coordinación técnica, asegurando que cada detalle, desde el equipamiento audiovisual hasta la gestión de asistentes, se ejecute con precisión.</div>
+            
+          </div></div>
+          <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/capacitacion_sqm.jpeg'); background-size: cover; background-position: center;">
+            <div class="d-flex flex-column align-items-start justify-content-center">
+         <div class="titulo-proyecto"> SQM | Cursos y talleres
         </div>
+         <div class="tag-proyecto">Producción de Eventos</div>
+         </div>
+         <div class="description-proyecto">
+            Sesión de trabajo con nuestros equipos de amplificación, monitores de 70’’, sistema de traducción simultánea infrarrojo y equipo de intérpretes.</div>
+        
+      </div></div>
+      <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/konrad.JPG'); background-size: cover; background-position: center;">
+        <div class="d-flex flex-column align-items-start justify-content-center">
+     <div class="titulo-proyecto">Fundación Konrad adenauer | Seminario
+    </div>
+     <div class="tag-proyecto">Producción de Eventos</div>
+     </div>
+     <div class="description-proyecto">
+      Interesante seminario auspiciado por la fundación, rescatando la importancia del litio como principal fuente productora del mundo. Apoyando con nuestros equipos: Pantalla led, amplificación, traducción simultánea alemán/español.</div>
+    
+  </div></div>
+      <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/enel_evento.jpeg'); background-size: cover; background-position: center;">
+        <div class="d-flex flex-column align-items-start justify-content-center">
+     <div class="titulo-proyecto"> Enel | Premiación excelencia académica
+    </div>
+     <div class="tag-proyecto">Producción de Eventos</div>
+     </div>
+     <div class="description-proyecto">
+        Premiación a alumnos destacados, hijos de funcionarios, comunas de Mejillones y Antofagasta. Implementación de salón con pantalla LED, amplificación, iluminación perimetral y animación profesional
+</div>
+    
+  </div></div>
+  <div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/aia_evento.JPG'); background-size: cover; background-position: center;">
+    <div class="d-flex flex-column align-items-start justify-content-center">
+ <div class="titulo-proyecto"> AIA | Cena mujera & minería
+</div>
+ <div class="tag-proyecto">Producción de Eventos</div>
+ </div>
+ <div class="description-proyecto">
+    Evento en asociación con nuestro cliente Hotel Antofagasta, acondicionando nuevo espacio en sector terraza oceánica con tarima sobre piscina, con iluminación perimetral, amplificación, escenario, pantallas, totem y banner LED, monitor de piso y de pedestal.
+</div>
+
+</div></div>
+<div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/aminerals_seminarios.JPG'); background-size: cover; background-position: center;">
+  <div class="d-flex flex-column align-items-start justify-content-center">
+<div class="titulo-proyecto"> Antofagasta Minerals | Seminarios 
+</div>
+<div class="tag-proyecto">Producción de Eventos</div>
+</div>
+<div class="description-proyecto">
+  Colaboración en seminarios, con pantallas LED, totem, streaming y amplificación.
+</div>
+
+</div></div>
+<div class="project-item eventos"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/aniversario_ua.jpeg'); background-size: cover; background-position: center;">
+  <div class="d-flex flex-column align-items-start justify-content-center">
+<div class="titulo-proyecto"> Universidad de Antofagasta | Celebración Aniversario 2024 
+</div>
+<div class="tag-proyecto">Producción de Eventos</div>
+</div>
+<div class="description-proyecto">
+  Estuvimos presentes en evento de aniversario UA, con pantallas LED, amplificación y streaming.
+</div>
+
+</div></div>
+<div class="project-item eventos carteleria"><div class="container-proyecto" style="background-image: url('../images/CARTELERIA/enaex.jpeg'); background-size: cover; background-position: center;">
+  <div class="d-flex flex-column align-items-start justify-content-center">
+<div class="titulo-proyecto">Enaex | Fiesta de primavera. 
+</div>
+<div class="tag-proyecto">Producción de Eventos</div>
+<div class="tag-proyecto">Cartelería digital</div>
+</div>
+<div class="description-proyecto">
+  Colaboración con la productora Karen Rosenberg, con nuestros totem LED y monitor de escenario.
+</div>
+
+</div></div>
+<div class="project-item eventos carteleria"><div class="container-proyecto" style="background-image: url('../images/CARTELERIA/WhatsApp\ Image\ 2024-09-20\ at\ 19.32.22.jpeg'); background-size: cover; background-position: center;">
+  <div class="d-flex flex-column align-items-start justify-content-center">
+<div class="titulo-proyecto">Hotel Antofagasta | Carteleria Gráfica Publicitaria. 
+</div>
+<div class="tag-proyecto">Cartelería digital</div>
+</div>
+<div class="description-proyecto">
+  Colaboración con Hotel Antofagasta en implementación de monitor publicitario en evento.
+</div>
+
+</div></div>
+<div class="project-item eventos carteleria"><div class="container-proyecto" style="background-image: url('../images/PRODUCCION/inacap.jpeg'); background-size: cover; background-position: center;">
+  <div class="d-flex flex-column align-items-start justify-content-center">
+<div class="titulo-proyecto">Inacap | Feria laboral. 
+</div>
+<div class="tag-proyecto">Producción de Eventos</div>
+</div>
+<div class="description-proyecto">
+  Presentes como cada año, con nuestro cliente INACAP Antofagasta con pantalla LED outdoor
+</div>
+
+</div></div>
+          </div>
+
+    </div>
     </div>
 </section>
 <section>
@@ -366,76 +532,30 @@
     });
 });
 </script>
-
-<script src="../js/app.js" defer></script>
 <script>
-    fetch('../Api/obtener_noticia.php')
-        .then(response => response.json())
-        .then(data => {
-            const allNews = document.getElementById("allNews");
-            const eventNews = document.getElementById("eventNews");
-            const techNews = document.getElementById("techNews");
-            const carteleriaNews = document.getElementById("carteleriaNews");
-            const standNews = document.getElementById("standNews");
+  // Obtener proyectos desde el backend
+  fetch('http://localhost/macoffice-master/proyects/obtener_proyectos.php')
+      .then(response => response.json())
+      .then(proyectos => {
+          const projectsContainer = document.getElementById('projects');
+          proyectos.forEach(project => {
+              const projectItem = document.createElement('div');
+              projectItem.classList.add('col-md-4', 'project-item', project.tag.replace(/\s+/g, '-').toLowerCase());
 
-            // Asegurar que los contenedores tengan la clase row
-            allNews.className = "row";
-            eventNews.className = "row";
-            techNews.className = "row";
-            carteleriaNews.className = "row";
-            standNews.className = "row";
-
-            allNews.innerHTML = "";
-            eventNews.innerHTML = "";
-            techNews.innerHTML = "";
-            carteleriaNews.innerHTML = "";
-            standNews.innerHTML = "";
-
-            data.forEach(news => {
-                const card = `
-                    <div class="col-md-4 mb-4">
-                        <div class="project-item ${news.tag.toLowerCase().replace(' ', '-')}">
-                            <div class="container-proyecto" style="background-image: url('${news.imagen}'); background-size: cover; background-position: center;">
-                                <div class="d-flex flex-column align-items-start justify-content-center">
-                                    <div class="titulo-proyecto">${news.titulo}</div>
-                                    <div class="tag-proyecto">${news.seccion}</div>
-                                </div>
-                                <div class="description-proyecto">
-                                    ${news.contenido}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-                // Agregar a la sección "Todos"
-                allNews.innerHTML += card;
-
-                // Agregar a las secciones específicas según el tag
-                switch(news.tag) {
-                    case "Event News":
-                        eventNews.innerHTML += card;
-                        break;
-                    case "Tech News":
-                        techNews.innerHTML += card;
-                        break;
-                    case "Carteleria News":
-                        carteleriaNews.innerHTML += card;
-                        break;
-                    case "Stand News":
-                        standNews.innerHTML += card;
-                        break;
-                }
-            });
-        })
-        .catch(error => {
-            console.error('Error al cargar las noticias:', error);
-            const allNews = document.getElementById("allNews");
-            if (allNews) {
-                allNews.innerHTML = '<div class="alert alert-danger">Error al cargar las noticias</div>';
-            }
-        });
+              projectItem.innerHTML = `
+                  <div class="container-proyecto" style="background-image: url('${project.background_image}');">
+                      <div class="d-flex flex-column align-items-start justify-content-center">
+                          <div class="titulo-proyecto">${project.titulo}</div>
+                          <div class="tag-proyecto">${project.seccion}</div>
+                      </div>
+                      <div class="description-proyecto">${project.description}</div>
+                  </div>
+              `;
+              projectsContainer.appendChild(projectItem);
+          });
+      });
 </script>
+<script src="../js/app.js" defer></script>
 
 </body>
 </html>
